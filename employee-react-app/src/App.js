@@ -28,6 +28,7 @@ class App extends React.Component {
 		return (
 			<>
 				<Header />
+				<Table data={this.state.employees} />
 			</>
 		)
 	}

@@ -3,7 +3,7 @@ import React from 'react';
 function Row(props) {
 	return (
 		<tr>
-			<td><img src={props.picture.thumbnail} /></td>
+			<td><img src={props.picture.large} /></td>
 			<td>{props.name.first}</td>
 			<td>{props.name.last}</td>
 			<td>{props.location.city}</td>

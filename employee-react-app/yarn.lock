@@ -2819,7 +2819,7 @@ boolbase@^1.0.0, boolbase@~1.0.0:
 
 bootstrap@^5.0.0:
   version "5.0.0"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.0.0.tgz#97635ac0e0d6cb466700ebf0fd266bfabf352ed2"
+  resolved "https://registry.npmjs.org/bootstrap/-/bootstrap-5.0.0.tgz"
   integrity sha512-tmhPET9B9qCl8dCofvHeiIhi49iBt0EehmIsziZib65k1erBW1rHhj2s/2JsuQh5Pq+xz2E9bEbzp9B7xHG+VA==
 
 brace-expansion@^1.1.7:
@@ -5245,7 +5245,7 @@ getpass@^0.1.1:
 
 gh-pages@^3.1.0:
   version "3.1.0"
-  resolved "https://registry.npmjs.org/gh-pages/-/gh-pages-3.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/gh-pages/-/gh-pages-3.1.0.tgz#ec3ed0f6a6e3fc3d888758fa018f08191c96bd55"
   integrity sha512-3b1rly9kuf3/dXsT8+ZxP0UhNLOo1CItj+3e31yUVcaph/yDsJ9RzD7JOw5o5zpBTJVQLlJAASNkUfepi9fe2w==
   dependencies:
     async "^2.6.1"

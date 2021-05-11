@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import API from './utils/Api';
 import Header from './components/Header';
-// import Search from './components/Search';
+import Search from './components/Search';
 import Table from './components/Table';
 import Filters from './components/Filters';
-import API from './utils/Api';
 
 class App extends React.Component {
 	state = {
@@ -24,6 +24,22 @@ class App extends React.Component {
 		})
 	}
 
+	handleSubmit = (event) => {
+		event.preventDefault();
+		let names = this.state.searchedName.split(' ')
+		this.setState({
+			employees: this.state.employees.filter(employee => employee.name.first === names[0] &&
+				employee.name.last === names[1])
+		})
+
+	}
+
+	handleInputChange = event => {
+		let name = (event.target.value);
+		this.setState({ searchedName: name });
+
+	}
+
 	handleSort = (key, asc) => {
 		let sort = [...this.state.employees];
 
@@ -38,6 +54,8 @@ class App extends React.Component {
 		return (
 			<>
 				<Header />
+				<Search handleSubmit={this.handleSubmit}
+					handleInputChange={this.handleInputChange} />
 				<Filters handleSort={this.handleSort} />
 				<Table data={this.state.employees} />
 			</>

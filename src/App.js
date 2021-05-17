@@ -26,12 +26,17 @@ class App extends React.Component {
 
 	handleSubmit = (event) => {
 		event.preventDefault();
-		let names = this.state.searchedName.split(' ')
+		// let names = this.state.searchedName.split(' ');
+		let search = this.state.searchedName.toLowerCase();
 		this.setState({
-			employees: this.state.employees.filter(employee => employee.name.first === names[0] &&
-				employee.name.last === names[1])
+			employees: this.state.employees.filter(employee => employee.name.first.toLowerCase().includes(search) ||
+				employee.name.last.toLowerCase().includes(search))
 		})
-
+		console.log(search);
+		// this.setState({
+		// 	employees: this.state.employees.filter(employee => employee.name.first === names[0] ||
+		// 		employee.name.last === names[1])
+		// })
 	}
 
 	handleInputChange = event => {

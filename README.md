@@ -8,13 +8,11 @@ The Employee Directory is an React app using the Random User API to generate a l
 * Random list of users will generate and appear on the page
 * Can sort by First or Last Name
 * Can search for user by name
----
 ## Credits
 * [React](https://reactjs.org/docs/getting-started.html)
 * [NPM](https://www.npmjs.com/)
 * [Stack Overflow](https://stackoverflow.com/)
 * [Heroku](https://heroku.com/)
----
 ## Links
 ### GitHub Page
 * https://iorellana21.github.io/employee-directory/
